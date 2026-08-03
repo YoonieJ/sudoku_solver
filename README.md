@@ -28,12 +28,12 @@ Rows/cols/values are all 1-9. Given clues (the bold numbers) can't be overwritte
 
 `SudokuGenerator` fills a random full board, then pulls clues out one at a time.
 After each removal it runs the solver in counting mode to make sure the puzzle
-still has exactly one solution — if pulling a cell would make it ambiguous, that
+still has exactly one solution. If pulling a cell would make it ambiguous, that
 cell stays put. Stops once it's down to ~26 clues, which is roughly what a "hard"
 newspaper puzzle looks like.
 
 ## Files
 
-- `SudokuSolver.java` — backtracking solver, also counts solutions
-- `SudokuGenerator.java` — builds the full grid and carves out the puzzle
-- `Main.java` — the actual game loop
+- `SudokuSolver.java` - backtracking solver, also counts solutions
+- `SudokuGenerator.java` - builds the full grid and carves out the puzzle
+- `Main.java` - the actual game loop
